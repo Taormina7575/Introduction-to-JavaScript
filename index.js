@@ -72,7 +72,7 @@ function multiply(a,b){
     let answer = a*b;
     return answer;
   }
-console.log(multiply(5,8))
+multiply(5,8)
 
   
 
@@ -92,7 +92,7 @@ function dogYears(a){
     let dogAge  = a*7;
     return dogAge;
 }
-console.log(dogYears(5))
+dogYears(5)
 
 
 
@@ -156,7 +156,7 @@ function hungryDog(age,weight){
 
   }
 
-  console.log(hungryDog(1,15))
+  hungryDog(1,15)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -219,7 +219,7 @@ function game(user, computer){
     return solution
 }
   
-  console.log(game('Rock',))
+  game('Rock',)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -239,7 +239,7 @@ function miles(kilos){
     return sol;
   }
 
-  console.log(miles(10))
+  
 
 
 //Task 5b - Feet to CM
@@ -254,8 +254,7 @@ function feet(cm){
     let sol = cm * .0328084;
     return sol;
   }
- 
-  console.log(feet(100))
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -269,11 +268,12 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(start){
-  for (let i = start; i >= 0; i--) {
-    sol = `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall` 
-
-    return sol;
+  for (let i = start; i >= 1; i--) {
+    let sol;
+    sol = `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`
+    console.log(sol)
   }
+  return sol;
 }
 
 
@@ -293,9 +293,26 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  let sol;
+  if (score >= 90){
+    sol = "you got an A";
   }
+  else if (score >= 80){
+    sol = 'you got a B';
+  }
+  else if (score >= 70){
+    sol = 'you got a C'
+  }
+  else if (score >= 60){
+    sol = 'you got a D'
+  }
+  else if (score < 60){
+    sol = 'you got an F'
+  }
+
+  return sol;
+}
   
   
 
